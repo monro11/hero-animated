@@ -25,6 +25,7 @@ export default function animation() {
   $('.burger').click(function() {
     if (!isClicked) {
       $('body').addClass('sidemenu-is-open');
+      $('.burger').addClass('is-active');
       tl1.play();
       
 
@@ -32,6 +33,7 @@ export default function animation() {
 
     } else {
       $('body').removeClass('sidemenu-is-open');
+      $('.burger').removeClass('is-active');
       tl1.reverse();
       isClicked = false;
     }
