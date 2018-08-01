@@ -1,0 +1,32 @@
+.navigation
+	background: linear-gradient(220deg, #d9e6af, #f0af82, #e68c78)
+	background-size: 600% 600%
+	animation: navigationGradient 5s ease-in-out infinite
+	transform: translateX(100%)
+	top: 0
+	right: 0
+	bottom: 0
+	left: auto
+	position: fixed
+	width: 400px
+	z-index: 2
+
+.nav
+	+lato
+	margin-top: 25%
+	&__item
+		padding-top: 40px
+		text-align: center
+	a
+		text-decoration: none
+		color: #fff
+
+
+@keyframes navigationGradient 
+	0%
+		background-position: 0% 88%
+	50%
+		background-position: 100% 13%
+	100%
+		background-position: 0% 88%
+	

@@ -1,0 +1,5 @@
+ProjectTitle: fudi
+
+PageList:
+- file: page.html
+  ready: 50
